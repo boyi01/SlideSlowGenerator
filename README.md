@@ -7,8 +7,8 @@ Hello,
 It will keep track of the files and when you call the script again, only the new or removed files will be changed.
 
  To use it you have to replace some values:
-    input_folder = "***"  # Change this to your input folder path
-    output_folder = "***"  # Change this to your output folder path
-    blurred_background = True # The a blurry variant of the picture
-    target_height = 1200 # Target Height
-    target_width = 2000 # Target Width
+ - input_folder = "***"  # Change this to your input folder path
+ - output_folder = "***"  # Change this to your output folder path
+ - blurred_background = True # The a blurry variant of the picture
+ - target_height = 1200 # Target Height
+ - target_width = 2000 # Target Width
