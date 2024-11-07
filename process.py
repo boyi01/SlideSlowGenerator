@@ -107,8 +107,9 @@ def resize_images_in_folder(input_folder, output_folder, json_file, blurred_back
     # Load processed images from JSON log
     processed_images = load_processed_images(json_file)
     processed_paths = {img['input_path'] for img in processed_images}
-    image_index = len(processed_images)+1  # Start numbering from the last count
-
+    image_index = len(processed_images)  # Start numbering from the last count
+    if image_index != 0:
+        image_index += 1
     # Walk through all files in input directory and subdirectories
     current_input_paths = set()
     for root, _, files in os.walk(input_folder):
